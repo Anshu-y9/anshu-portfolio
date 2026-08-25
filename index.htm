@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anshu Yadav | Web Developer & Data Entry Specialist</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:#172033;
+    background:#f5f7fb;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111827;
+    padding:16px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#111827,#2563eb);
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:25px;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    opacity:.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 25px;
+    background:white;
+    color:#1d4ed8;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#64748b;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#1d4ed8;
+}
+
+.icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.skill{
+    background:#e0e7ff;
+    color:#1e3a8a;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.project{
+    background:white;
+    max-width:950px;
+    margin:auto;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.project h3{
+    color:#1d4ed8;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.project-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:18px;
+    margin:30px 0;
+}
+
+.info-box{
+    background:#f1f5f9;
+    padding:20px;
+    border-radius:10px;
+}
+
+.info-box strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+.contact{
+    text-align:center;
+    background:#111827;
+    color:white;
+}
+
+.contact p{
+    margin:10px;
+    font-size:18px;
+}
+
+.contact a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:700px){
+
+    nav{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">Anshu Yadav</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <span class="badge">WELCOME TO MY PORTFOLIO</span>
+
+        <h1>Anshu Yadav</h1>
+
+        <h2>
+            Web Developer & Data Entry Specialist
+        </h2>
+
+        <p>
+            I create responsive websites and practical web applications
+            while providing accurate Data Entry, Web Research,
+            Excel and Google Sheets services.
+        </p>
+
+        <a href="#projects" class="btn">
+            View My Work
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="section-title">
+        <h2>About Me</h2>
+        <p>Professional Profile</p>
+    </div>
+
+    <div class="about">
+
+        <p>
+            Hello! I'm <strong>Anshu Yadav</strong>, a computer engineering
+            student and aspiring web developer interested in creating
+            useful, responsive and user-friendly digital solutions.
+        </p>
+
+        <br>
+
+        <p>
+            Along with website development, I provide services related to
+            <strong>Data Entry, Web Research, Excel, Google Sheets
+            and document management</strong>.
+        </p>
+
+        <br>
+
+        <p>
+            I enjoy learning new technologies and working on practical
+            projects that solve real-world problems.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+    <div class="section-title">
+        <h2>My Services</h2>
+        <p>What I Can Help You With</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Website Development</h3>
+            <p>
+                Responsive and user-friendly websites using HTML,
+                CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⌨️</div>
+            <h3>Data Entry</h3>
+            <p>
+                Accurate data entry, data formatting, document
+                conversion and database-related tasks.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔎</div>
+            <h3>Web Research</h3>
+            <p>
+                Online research, information collection,
+                data verification and organized reporting.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Excel & Google Sheets</h3>
+            <p>
+                Spreadsheet data entry, formatting, sorting,
+                filtering and basic data management.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>MS Office</h3>
+            <p>
+                Microsoft Word, Excel, PowerPoint and
+                professional document preparation.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🗂️</div>
+            <h3>Document Management</h3>
+            <p>
+                Organizing, formatting and maintaining
+                digital documents and records.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <div class="section-title">
+        <h2>Technical Skills</h2>
+        <p>Tools & Technologies</p>
+    </div>
+
+    <div class="skills">
+
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">PHP</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">XAMPP</span>
+        <span class="skill">MS Word</span>
+        <span class="skill">MS Excel</span>
+        <span class="skill">PowerPoint</span>
+        <span class="skill">Google Sheets</span>
+        <span class="skill">Data Entry</span>
+        <span class="skill">Web Research</span>
+        <span class="skill">Visual Studio Code</span>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <div class="section-title">
+        <h2>Featured Project</h2>
+        <p>My Academic / OJT Project</p>
+    </div>
+
+    <div class="project">
+
+        <h3>🎓 EduAI Pro</h3>
+
+        <p>
+            <strong>AI-Powered Smart College & Career Management System</strong>
+        </p>
+
+        <br>
+
+        <p>
+            EduAI Pro is a centralized web-based platform designed to
+            connect academic management, student guidance, mentoring,
+            career development and future AI-assisted services in one
+            environment.
+        </p>
+
+        <div class="project-info">
+
+            <div class="info-box">
+                <strong>Frontend</strong>
+                HTML5, CSS3, JavaScript
+            </div>
+
+            <div class="info-box">
+                <strong>Backend</strong>
+                PHP
+            </div>
+
+            <div class="info-box">
+                <strong>Database</strong>
+                MySQL
+            </div>
+
+            <div class="info-box">
+                <strong>Local Server</strong>
+                XAMPP / Apache
+            </div>
+
+        </div>
+
+        <h3>Key Modules</h3>
+
+        <p>
+            ✔ Student Management<br>
+            ✔ Teacher Management<br>
+            ✔ Mentor Management<br>
+            ✔ Administrator Dashboard<br>
+            ✔ Academic Management<br>
+            ✔ Career Guidance<br>
+            ✔ Skill & Progress Tracking<br>
+            ✔ Reports & Analytics<br>
+            ✔ Authentication & Role-Based Access
+        </p>
+
+        <br>
+
+        <h3>Future Scope</h3>
+
+        <p>
+            AI-assisted career recommendations, skill-gap analysis,
+            personalized learning paths, advanced analytics,
+            mobile/PWA support and cloud deployment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <h2>Let's Work Together</h2>
+        <p style="color:#cbd5e1">
+            Feel free to contact me for projects or services.
+        </p>
+    </div>
+
+    <p>
+        📧 Email:
+        <a href="mailto:anshu9815@gmil.com">
+            anshu9815@gmil.com
+        </a>
+    </p>
+
+    <p>
+        💼 Services: Web Development • Data Entry • Web Research
+    </p>
+
+    <p>
+        📊 Excel & Google Sheets • MS Office
+    </p>
+
+</section>
+
+
+<footer>
+    © 2026 Anshu Yadav. All Rights Reserved.
+</footer>
+
+</body>
+</html>
